@@ -1,0 +1,70 @@
+export default function Home() {
+  return (
+    <main className="min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-6">
+        <h1 className="text-5xl font-bold mb-4">Welcome to My Landing Page 🚀</h1>
+        <p className="text-lg mb-6 max-w-2xl">
+          Simple, modern, and responsive landing page built with Next.js, TypeScript, and Tailwind CSS.
+        </p>
+        <a
+          href="#features"
+          className="bg-white text-blue-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition"
+        >
+          Get Started
+        </a>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-20 bg-white text-gray-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">✨ Features</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">⚡ Fast</h3>
+              <p>Optimized with Next.js for top performance and speed.</p>
+            </div>
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">📱 Responsive</h3>
+              <p>Looks great on mobile, tablet, and desktop devices.</p>
+            </div>
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">🎨 Modern</h3>
+              <p>Clean design powered by Tailwind CSS & TypeScript.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-gray-100 text-gray-800">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">About Us</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            This landing page is built to demonstrate how quickly you can create a
+            beautiful and responsive website using Next.js + TypeScript + Tailwind.
+          </p>
+        </div>
+      </section>
+
+      {/* Call To Action */}
+      <section id="cta" className="py-20 bg-indigo-700 text-white text-center">
+        <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
+        <p className="mb-6 text-lg">
+          Build and launch your modern website in just a few hours.
+        </p>
+        <a
+          href="#"
+          className="bg-white text-indigo-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition"
+        >
+          Join Now
+        </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>© {new Date().getFullYear()} My Landing Page. All rights reserved.</p>
+      </footer>
+    </main>
+  );
+}
