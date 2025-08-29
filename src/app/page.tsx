@@ -1,103 +1,78 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-6">
+        <h1 className="text-5xl font-bold mb-4">Azka's community</h1>
+        <p className="text-lg mb-6 max-w-2xl">
+          You've wasted enough time following programs that overpromised and underdelivered.
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  You're still stuck, but that ends today.
+
+My elite health and self improvement ecosystem guarantees transformation in 2 weeks and builds lifelong habits for passive, effortless results.
+No more overwhelm. No more confusion.
+
+You'll enter my proven 4-phase progression system and unlock exactly what you need, when you need it.
+
+        </p>
+        <a
+          href="#features"
+          className="bg-white text-blue-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition"
+        >
+          Get Started
+        </a>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-20 bg-white text-gray-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">What we provide</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">Access to like minded people</h3>
+              <p>We don't just serve guide but, we also built the best community.</p>
+            </div>
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">50+ FULL guides</h3>
+              <p>Step by step progressively guide</p>
+            </div>
+            <div className="p-6 shadow-lg rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">1-on-1 DM Access to me</h3>
+              <p>full personalisation</p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-gray-100 text-gray-800">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">About Us</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+           This isn't another course. It's a complete transformation system.
+          </p>
+        </div>
+      </section>
+
+      {/* Call To Action */}
+      <section id="cta" className="py-20 bg-indigo-700 text-white text-center">
+        <h2 className="text-3xl font-bold mb-4">Ready to be the best version of yourself?</h2>
+        <p className="mb-6 text-lg">
+          elevate your looks and every single aspect on your life with us.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+  href="/contact"
+  className="bg-white text-indigo-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition"
+>
+  Join Now
+</a>
+
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>© {new Date().getFullYear()} Azka Ziyad Page. All rights reserved.</p>
       </footer>
-    </div>
+    </main>
   );
 }
