@@ -3,16 +3,16 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-r from-blue-700 to-indigo-800 text-white px-6">
-        <h1 className="text-5xl font-bold mb-4">Azka's community</h1>
+        <h1 className="text-5xl font-bold mb-4">Azka&apos;s community</h1>
         <p className="text-lg mb-6 max-w-2xl">
-          You've wasted enough time following programs that overpromised and underdelivered.
+          You&apos;ve wasted enough time following programs that overpromised and underdelivered.
 
-  You're still stuck, but that ends today.
+  You&apos;re still stuck, but that ends today.
 
 My elite health and self improvement ecosystem guarantees transformation in 2 weeks and builds lifelong habits for passive, effortless results.
 No more overwhelm. No more confusion.
 
-You'll enter my proven 4-phase progression system and unlock exactly what you need, when you need it.
+You&apos;ll enter my proven 4-phase progression system and unlock exactly what you need, when you need it.
 
         </p>
         <a
@@ -30,7 +30,7 @@ You'll enter my proven 4-phase progression system and unlock exactly what you ne
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 shadow-lg rounded-lg">
               <h3 className="text-xl font-semibold mb-2">Access to like minded people</h3>
-              <p>We don't just serve guide but, we also built the best community.</p>
+              <p>We don&apos;t just serve guide but, we also built the best community.</p>
             </div>
             <div className="p-6 shadow-lg rounded-lg">
               <h3 className="text-xl font-semibold mb-2">50+ FULL guides</h3>
@@ -49,7 +49,7 @@ You'll enter my proven 4-phase progression system and unlock exactly what you ne
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">About Us</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-           This isn't another course. Its a complete transformation system.
+           This isn&apos;t another course. Its a complete transformation system.
           </p>
         </div>
       </section>
